@@ -1,6 +1,7 @@
 body 
 {
   background: rgb(250, 250, 250);
+  min-width: 300px !important;
 }
 
 .container 
@@ -9,10 +10,25 @@ body
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: .5s;
 }
 
 .image
 {
   height: 60px;
   margin-top: 50px;
+  transition: .5s;
+}
+
+@media (max-width: 770px)
+{
+  .container
+  {
+    margin: 0 10%;
+  }
+
+  .image
+  {
+    height: 80px;
+  }
 }
