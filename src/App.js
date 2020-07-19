@@ -26,6 +26,7 @@ export default class App extends React.Component {
 
     return (
       <div className={styles.container}>
+        <img src='https://i.ibb.co/7QpKsCX/image.png' className={styles.image} alt='COVID-19' />
         <Cards data={data} />
         <CountryPicker onChange={this.handleCountryChange} />
         <Chart data={data} country={country} />

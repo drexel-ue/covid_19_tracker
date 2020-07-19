@@ -10,3 +10,9 @@ body
   align-items: center;
   justify-content: center;
 }
+
+.image
+{
+  height: 60px;
+  margin-top: 50px;
+}
