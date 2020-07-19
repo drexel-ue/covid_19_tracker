@@ -9,9 +9,6 @@ export default class App extends React.Component {
 
   async componentDidMount() {
     this.setState({ data: await fetchData() })
-
-    // TODO: remove.
-    console.log('App State', this.state);
   }
 
   render() {

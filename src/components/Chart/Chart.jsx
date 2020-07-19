@@ -12,9 +12,6 @@ export default () => {
         const fetch = async () => {
             setDailyData(await fetchDailyData());
         };
-
-        console.log('Chart Data', dailyData);
-
         fetch();
     }, [dailyData.length]);
 
