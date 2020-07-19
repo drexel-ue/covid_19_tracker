@@ -12,7 +12,6 @@ export default () => {
         const fetch = async () => {
             setCountries(await fetchCountries());
         };
-
         fetch();
     }, [countries.length]);
 
@@ -20,6 +19,7 @@ export default () => {
         <FormControl className={styles.formControl}>
             <NativeSelect>
                 <option value='global'>Global</option>
+                {countries.map((country, index) => (<option key={`country_${index}`} value={country}>{country}</option>))}
             </NativeSelect>
         </FormControl>
     );
